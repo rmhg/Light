@@ -1,0 +1,25 @@
+body
+{ 
+  margin : 0;
+  padding : 0;
+  background: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icon {
+    position: absolute;
+    height : 50px;
+    width : 50px;
+    border : 1px solid black;
+}
+
+
+
+span {
+    font-family: monospace;
+    font-size: 20px;
+    position: absolute;
+    top : 50%;
+    left: 50%;
+}
