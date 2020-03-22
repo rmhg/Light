@@ -27,7 +27,7 @@ class light{
        var t = distance(this.x,x,this.y,y);
         var neti;
         neti = t/(this.intensity);
-        console.log(neti);
+
       return neti;
     }
 }
@@ -54,7 +54,7 @@ class Square
         pen.restore();
     }
 }
-var l = new light();
+
 function drawall(l)
 {
     
@@ -70,11 +70,11 @@ function drawall(l)
 
 function loop(x,y)
 {
-    pen.clearRect(0,0,canvas.height,canvas.width);
+    pen.clearRect(0,0,canvas.width,canvas.height);
     drawall(new light(x,y));
 }
 window.onmousemove = ()=>{
-    loop(Math.floor(event.clientX),Math.floor(event.clientY));   
+    loop(event.clientX,event.clientY);  
 }
 window.addEventListener("touchmove",()=>{
     loop(event.touches[0].clientX,event.touches[0].clientY);
